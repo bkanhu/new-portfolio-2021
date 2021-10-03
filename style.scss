@@ -15,35 +15,47 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "poppins", sans-serif;
+  // font-family: "poppins", sans-serif;
   color: var(--black-95);
 }
-.cursor {
-  // display: block;
-  width: 14px;
-  height: 14px;
-  border: 1px solid #0a0a0a;
-  border-radius: 50%;
-  background-color: #202020b4;
-  position: absolute;
-  z-index: 1;
-  // transform: translate(-5px, -5px);
-  // animation-delay: 2s;
-  transition-timing-function: ease-out;
-  transition-duration: 200ms;
+
+h1,
+h2,
+h3 {
+  font-family: "Crimson Text", serif;
 }
+p {
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+// .cursor {
+//   // display: block;
+//   width: 14px;
+//   height: 14px;
+//   border: 1px solid #0a0a0a;
+//   border-radius: 50%;
+//   background-color: #202020b4;
+//   position: absolute;
+//   z-index: 1;
+//   // transform: translate(-5px, -5px);
+//   // animation-delay: 2s;
+//   transition-timing-function: ease-out;
+//   transition-duration: 200ms;
+// }
 
 // univarsal pill
-.span-style-one {
-  color: var(--orange-100);
-  background-color: var(--orange-muted);
-  font-weight: 600;
-}
-.span-style-two {
-  color: var(--blue-100);
-  background-color: var(--blue-muted);
-  font-weight: 600;
-}
+// .span-style-one {
+//   color: var(--orange-100);
+//   background-color: var(--orange-muted);
+//   font-weight: 600;
+// }
+// .span-style-two {
+//   color: var(--blue-100);
+//   background-color: var(--blue-muted);
+//   font-weight: 600;
+// }
 section {
   width: 70%;
   margin: auto;
@@ -66,16 +78,45 @@ nav {
 
 // hero section
 .hero-section {
-  &.text-center-section {
-    width: 70%;
-    margin: 4rem auto;
-  }
+  display: block;
+  // margin-top: 3rem;
+  // &.text-center-section {
+  width: 70%;
+  margin: 7rem auto;
+  // }
   min-height: 60vh;
   h1 {
-    font-size: 2.64rem;
+    font-size: 3.54rem;
+    // font-size: 56px;
     line-height: 1.5;
-    word-wrap: break-word;
-    font-weight: 400;
+    // word-wrap: break-word;
+    // font-weight: 400;
+  }
+  p {
+    margin-top: 2.3rem;
+  }
+  .fa-chevron-down {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 1.53rem;
+    animation: arrowUpDown infinite 1500ms 200ms ease-in-out;
+    // transform: translate(25);
+  }
+  @keyframes arrowUpDown {
+    0% {
+      transform: translateY(0px);
+    }
+    // 25% {
+    //   transform: translateY(5px);
+    // }
+    75% {
+      transform: translateY(10px);
+    }
+
+    100% {
+      transform: translateY(0px);
+    }
   }
 }
 
@@ -83,31 +124,62 @@ nav {
 .project-header {
   h2 {
     line-height: 1.5;
-    font-size: 3.5rem;
-    font-weight: 600;
-    padding-left: 12px;
-    span {
-      display: block;
-      color: transparent;
-      text-shadow: none;
-      -webkit-text-stroke: 2.28px var(--black-95);
-      // stroke: 0.8px #000;
+    font-size: 2rem;
+    // font-weight: 600;
+    // padding-left: 12px;
+    // span {
+    //   display: block;
+    //   color: transparent;
+    //   text-shadow: none;
+    //   -webkit-text-stroke: 2.28px var(--black-95);
+    //   // stroke: 0.8px #000;
+    // }
+  }
+}
+
+.project-container {
+  // display: flex;
+  .project-card {
+    display: flex;
+    .project-card-image {
+      // display: flex;
+      img {
+        border-radius: 8px;
+        margin-right: 10px;
+        height: 350px;
+      }
+    }
+    .project-body {
+      h3 {
+        // display: block;
+        margin-top: 2rem;
+        font-size: 2.3rem;
+        span {
+          display: block;
+        }
+      }
+      p {
+        margin-top: 1.5rem;
+      }
+      a {
+        font-size: 1.42rem;
+      }
     }
   }
 }
-.project-header:hover {
-  transition-duration: 200ms;
-  h2 {
-    color: transparent;
-    text-shadow: none;
-    -webkit-text-stroke: 2.28px var(--black-95);
-    span {
-      color: var(--black-95);
-      transition-timing-function: ease-in;
-      transition-duration: 300ms;
-    }
-  }
-}
+// .project-header:hover {
+//   transition-duration: 200ms;
+//   h2 {
+//     color: transparent;
+//     text-shadow: none;
+//     -webkit-text-stroke: 2.28px var(--black-95);
+//     span {
+//       color: var(--black-95);
+//       transition-timing-function: ease-in;
+//       transition-duration: 300ms;
+//     }
+//   }
+// }
 // featured project text and animation section end here
 
 // project-list start here
@@ -213,7 +285,7 @@ p.email-success {
   margin: 15px auto;
   transition-timing-function: ease-in;
   transition-duration: 800ms;
-  // animation: kadel 200ms 20ms ease-in;
+  // animation: hideSuccessMsg 200ms 20ms ease-in;
   // display: none;
 }
 
@@ -246,6 +318,9 @@ footer {
   hr {
     width: 60%;
     margin: 15px auto 25px;
+  }
+  p {
+    font-size: 0.85rem;
   }
 }
 .scroll-top {
@@ -290,11 +365,14 @@ footer {
   }
   .navbar {
     .container-fluid {
-      display: flex;
+      // display: flex;
       flex-direction: column;
+      width: 100%;
+      margin: 0 auto;
       ul {
-        display: flex;
+        // display: flex;
         flex-direction: row;
+        margin: 0 auto;
         li {
           // display: block;
           margin-top: 15px;
@@ -302,29 +380,52 @@ footer {
         }
       }
     }
-  }
-  .navbar-section-links {
-    display: none;
+    .navbar-section-links {
+      // margin: -105;
+      // display: none;
+    }
+    .navbar-social {
+      display: none;
+    }
   }
   .project-header {
     h2 {
       // line-height: 1.5;
       font-size: 2.3rem;
-      letter-spacing: 3px;
+      // letter-spacing: 3px;
     }
   }
-  .project-list {
-    width: 100%;
-    .row {
-      flex-direction: column-reverse;
-    }
-    .project--about {
-      padding: 1.5rem;
-    }
-    .project--image {
-      padding: 0;
-      img {
-        height: 250px;
+  .project-container {
+    // display: flex;
+    .project-card {
+      // display: flex;
+      flex-direction: column;
+      .project-card-image {
+        // display: flex;
+        img {
+          // border-radius: 8px;
+          margin-right: 0;
+          width: 100%;
+          height: auto;
+        }
+      }
+      .project-body {
+        // h3 {
+        // display: block;
+        // margin-top: 2rem;
+        // font-size: 2.3rem;
+        // span {
+        // display: block;
+        // }
+        // }
+        p {
+          line-height: 1.63rem;
+          // letter-spacing: initial;
+          letter-spacing: 0.81px;
+        }
+        // a {
+        // font-size: 1.42rem;
+        // }
       }
     }
   }
@@ -332,6 +433,12 @@ footer {
     a.social-links {
       // margin: 20px 0;
       padding: 10px 10px;
+    }
+  }
+  footer {
+    p {
+      width: 70%;
+      margin: 0 auto 25px;
     }
   }
 }
