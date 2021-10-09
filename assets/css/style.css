@@ -371,14 +371,130 @@ footer p {
     width: 100%;
   }
   .about-section .col-3 img {
-    width: 250px;
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
   }
   .about-section .col-9 {
     width: 100%;
+    margin-top: 25px;
   }
   .about-section .col-9 p {
-    font-size: 1.2rem;
+    font-size: 0.982rem;
+    line-height: 1.6;
+  }
+  .email-copy p#email {
+    padding: 10px;
+    font-size: 1.25rem;
+  }
+  .social a.social-links {
+    margin: 5px 0;
+  }
+}
+
+@media screen and (min-width: 561px) and (max-width: 800px) {
+  .navbar .container-fluid {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .navbar .container-fluid ul {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .navbar .container-fluid ul li {
+    margin-top: 15px;
+    padding: 0 15px;
+  }
+  .navbar .navbar-social {
+    display: none;
+  }
+  .hero-section {
+    display: block;
+    width: 80%;
+    margin: 5rem auto;
+    min-height: 60vh;
+  }
+  .hero-section h1 {
+    font-size: 2.35rem;
+  }
+  section {
+    width: 80%;
+    margin: auto;
+  }
+  .project-container .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-container .project-card .project-card-image img {
+    height: 350px;
+    width: 100%;
+  }
+  .about-section {
+    display: block;
+    width: 80%;
+    margin: 7rem auto;
+  }
+  .about-section .col-3 {
+    width: 30%;
+  }
+  .about-section .col-3 img {
+    width: 150px;
+  }
+  .about-section .col-9 {
+    width: 60%;
+    margin: auto;
+  }
+  .about-section .col-9 p {
+    font-size: 0.82rem;
     line-height: 1.5;
+    font-weight: lighter;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px) {
+  .hero-section {
+    min-height: 20vh;
+  }
+  .hero-section p {
+    font-size: 2rem;
+  }
+  .project-header h2 {
+    line-height: 1.5;
+    font-size: 3rem;
+  }
+  .project-container .project-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-container .project-card .project-card-image img {
+    height: 450px;
+    width: 100%;
+  }
+  .project-container .project-card .project-body h3 {
+    font-size: 3rem;
+  }
+  .project-container .project-card .project-body p {
+    font-size: 2rem;
+  }
+  .about-section {
+    display: block;
+    width: 80%;
+    margin: 7rem auto;
+  }
+  .contact-container h2 {
+    line-height: 1.5;
+    font-size: 2.55em;
+  }
+  .email-copy p#email {
+    font-size: 2.2rem;
+  }
+  i.fas.fa-clipboard {
+    font-size: 1.62rem;
+  }
+  .social a.social-links i {
+    font-size: 2.2rem;
+    color: var(--black-social);
   }
 }
 /*# sourceMappingURL=style.css.map */
