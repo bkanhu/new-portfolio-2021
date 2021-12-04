@@ -162,8 +162,12 @@ nav {
       p {
         margin-top: 1.5rem;
       }
-      a {
-        font-size: 1.42rem;
+      .link-container {
+        a {
+          display: block;
+          font-size: 1.2rem;
+          margin-top: 0.25rem;
+        }
       }
     }
   }
@@ -568,6 +572,21 @@ footer {
         font-size: 0.82rem;
         line-height: 1.5;
         font-weight: lighter;
+        background-color: rebeccapurple;
+      }
+      .col-lg-2 {
+        align-items: center;
+        display: inline-flex;
+        height: 100%;
+        max-width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 16px;
+        font-size: 14px;
+        height: 32px;
+        padding: 0 1em;
+        margin: 0.2em 0.25em;
+        font-weight: 600;
+        cursor: -webkit-grabbing;
       }
     }
   }
