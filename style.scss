@@ -12,7 +12,14 @@
   --green-muted: #cdf3cd;
   --whitish: #f4f9fd;
   --color-one: #ffab66;
-  --color-two: #7551cb;
+  // --color-two: #7551cb;
+  --color-two: #20055e;
+  --modern-sky:#B5EAEA;
+  --modern-yellow:#FFE194;
+  --modern-lime-green:#EDFFA9;
+  --modern-magenta::#E4BAD4;
+  --modern-faded-blue:#B8B5FF;
+
 }
 
 html {
@@ -131,11 +138,23 @@ h2.center-heading {
   line-height: 1.5;
   font-size: 2rem;
 }
+// --modern-sky:#B5EAEA;
+//   --modern-yellow:#FFE194;
+//   --modern-lime-green:#EDFFA9;
+//   --modern-magenta::#E4BAD4;
+//   --modern-faded-blue:#B8B5FF;
 .color-one {
-  background-color: var(--color-one);
+  background-color: var(--modern-sky);
+  
 }
 .color-two {
-  background-color: var(--color-two);
+  background-color: var(--modern-magenta);
+}
+.color-three {
+  background-color: var(--modern-lime-green);
+}
+.color-four {
+  background-color: var(--modern-yellow);
 }
 a,
 a:active,
@@ -199,26 +218,32 @@ a:hover {
       // display: block;
       // margin-top: 2rem;
       font-size: 2.3rem;
-      color: var(--white-80);
+      color: var(--color-two);
       span {
         display: block;
       }
     }
     p {
-      color: var(--white-80);
+      color: var(--color-two);
       margin-top: 1.5rem;
     }
     .color-one,
-    .color-two {
+    .color-two,.color-three,.color-four {
       min-height: inherit;
       padding: 25px;
     }
   }
 }
+.project-containers > .row>div:nth-child(odd) {
+  margin-bottom: 15px;
+}
 .project-container {
   // display: flex;
   .project-card {
     display: flex;
+    flex-flow: wrap;
+    
+    margin-bottom: 15px;
     .project-card-image {
       // display: flex;
       img {
@@ -517,13 +542,13 @@ footer {
         // display: block;
         // margin-top: 2rem;
         font-size: 2.3rem;
-        color: var(--white-80);
+        color: var(--color-two);
         span {
           display: block;
         }
       }
       p {
-        color: var(--white-80);
+        color: var(--color-two);
         margin-top: 1.5rem;
       }
       .color-one,
