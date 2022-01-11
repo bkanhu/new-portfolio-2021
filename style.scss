@@ -156,6 +156,19 @@ h2.center-heading {
 .color-four {
   background-color: var(--modern-yellow);
 }
+
+span.tech-tag {
+  // background: #99dddd;
+  // background: rgb(113, 25, 255);
+  background: var(--blue-100);
+  padding: 3px 5px;
+  border-radius: 25px;
+  font-size: .8rem;
+  color: rgb(255, 255, 255);
+}
+
+
+
 a,
 a:active,
 a:hover {
@@ -615,7 +628,8 @@ footer {
   }
   .col-9 {
     width: 60%;
-    margin: auto;
+    // margin: auto;
+    margin: 10px 10px 10px auto;
     p {
       // width: 500px;
       font-size: 1.02rem;

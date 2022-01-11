@@ -122,6 +122,14 @@ h2.center-heading {
   background-color: var(--modern-yellow);
 }
 
+span.tech-tag {
+  background: var(--blue-100);
+  padding: 3px 5px;
+  border-radius: 25px;
+  font-size: .8rem;
+  color: white;
+}
+
 a,
 a:active,
 a:hover {
@@ -511,7 +519,7 @@ footer p {
 
 .about-section .col-9 {
   width: 60%;
-  margin: auto;
+  margin: 10px 10px 10px auto;
 }
 
 .about-section .col-9 p {
